@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>謎解き脱出ブース</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 背景の幾何学模様（イカゲーム風の円・三角・四角） -->
+<div class="bg-shapes" aria-hidden="true">
+  <svg class="shape shape-circle" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/></svg>
+  <svg class="shape shape-triangle" viewBox="0 0 100 100"><polygon points="50,4 96,92 4,92"/></svg>
+  <svg class="shape shape-square" viewBox="0 0 100 100"><rect x="6" y="6" width="88" height="88"/></svg>
+</div>
+
+<!-- ============ 画面1：待機画面 ============ -->
+<section id="screen-waiting" class="screen active">
+  <div class="waiting-wrap">
+    <p class="eyebrow">PLAYER SELECT</p>
+    <h1 class="title">参加人数を選択してください</h1>
+    <div class="player-buttons">
+      <button class="player-btn" data-players="1">
+        <svg viewBox="0 0 100 100" class="player-icon"><circle cx="50" cy="50" r="44"/></svg>
+        <span class="player-num">1</span>
+        <span class="player-label">人</span>
+      </button>
+      <button class="player-btn" data-players="2">
+        <svg viewBox="0 0 100 100" class="player-icon"><polygon points="50,6 94,90 6,90"/></svg>
+        <span class="player-num">2</span>
+        <span class="player-label">人</span>
+      </button>
+      <button class="player-btn" data-players="3">
+        <svg viewBox="0 0 100 100" class="player-icon"><rect x="8" y="8" width="84" height="84"/></svg>
+        <span class="player-num">3</span>
+        <span class="player-label">人</span>
+      </button>
+    </div>
+    <p class="hint">人数に応じて制限時間が変わります（1人:90秒 / 2人:75秒 / 3人:60秒）</p>
+  </div>
+</section>
+
+<!-- ============ 画面2：問題画面 ============ -->
+<section id="screen-question" class="screen">
+  <div class="timer-badge">
+    <svg viewBox="0 0 100 100" class="timer-ring"><circle cx="50" cy="50" r="46"/></svg>
+    <span id="timer-display">00:00</span>
+  </div>
+
+  <div class="question-layout">
+    <div class="question-image-pane">
+      <img id="question-image" src="" alt="謎解きの問題">
+    </div>
+
+    <div class="answer-pane">
+      <div class="answer-display" id="answer-display"><span id="answer-text"></span><span class="caret">|</span></div>
+
+      <div class="keypad" id="keypad">
+        <!-- JSで生成 -->
+      </div>
+    </div>
+  </div>
+
+  <div class="wrong-overlay" id="wrong-overlay">
+    <span class="wrong-mark">×</span>
+  </div>
+</section>
+
+<!-- ============ 画面3：正解画面 ============ -->
+<section id="screen-correct" class="screen result-screen correct-screen">
+  <div class="result-inner">
+    <span class="result-mark">○</span>
+    <p class="result-text">正解　次の部屋に進め</p>
+  </div>
+</section>
+
+<!-- ============ 画面4：脱落画面 ============ -->
+<section id="screen-fail" class="screen result-screen fail-screen">
+  <div class="result-inner">
+    <span class="result-mark">✕</span>
+    <p class="result-text">脱落　直ちに退出せよ</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
