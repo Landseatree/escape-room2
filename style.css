@@ -243,8 +243,8 @@ html, body {
   height: 46px;
 }
 .key-delete {
-  border-color: var(--gray);
-  color: var(--gray);
+  border-color: var(--white);
+  color: var(--white);
 }
 .key-confirm {
   background: var(--pink);
