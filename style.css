@@ -136,8 +136,8 @@ html, body {
   left: 50%;
   transform: translate(-0%, -50%);
 
-  width: 88px;
-  height: 88px;
+  /*width: 88px;*/
+  /*height: 88px;*/
   z-index: 5;
 
   display: flex;
