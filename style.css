@@ -127,12 +127,6 @@ html, body {
   z-index: 1;
   color: var(--gray);
 }
-.hint {
-  font-size: 13px;
-  color: var(--gray);
-  max-width: 500px;
-  margin-top: 8px;
-}
 
 /* ============ 画面2：問題画面 ============ */
 #screen-question {
