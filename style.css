@@ -170,7 +170,7 @@ html, body {
 
 .question-image-pane {
   flex: 1.1;
-  background: var(--bg-panel);
+  background: var(--bg-black);
   border: 2px solid #2a2a2e;
   border-radius: 14px;
   display: flex;
