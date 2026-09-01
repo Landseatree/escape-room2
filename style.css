@@ -39,7 +39,7 @@ html, body {
   fill: none;
   stroke: var(--pink);
   stroke-width: 1.2;
-  opacity: 0.16;
+  opacity: 0.4;
 }
 .shape-circle { width: 26vw; top: -8vw; left: -6vw; }
 .shape-triangle { width: 22vw; bottom: -6vw; right: 4vw; stroke: var(--teal); }
