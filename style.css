@@ -132,7 +132,7 @@ html, body {
 
 .timer-badge {
   position: absolute;
-  top: 40px;
+  top: 60px;
   left: 50%;
   transform: translate(-0%, -50%);
 
