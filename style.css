@@ -1,6 +1,6 @@
 :root {
   --bg-black: #0b0b0d;
-  --bg-panel: #353537;
+  --bg-panel: #757577;
   --pink: #ff0864;
   --pink-soft: #ff5b96;
   --teal: #00c4b3;
@@ -132,8 +132,8 @@ html, body {
 
 .timer-badge {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 30px;
+  left: 30px;
   width: 88px;
   height: 88px;
   z-index: 5;
