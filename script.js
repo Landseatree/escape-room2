@@ -3,7 +3,7 @@
    ============================================================ */
 
 // ---- 設定 ----
-const FOLDERS = ["no1", "no2", "no3", "no4", "no5"];
+const FOLDERS = ["no1", "no2", "no3", "no4", "no5", "no6", "no7", "no8", "no9"];
 const TIME_LIMIT = { 1: 120, 2: 105, 3: 90 }; // 秒
 const RESULT_SCREEN_DURATION = 5000; // ms
 const WRONG_OVERLAY_DURATION = 2000; // ms
